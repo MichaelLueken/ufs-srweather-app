@@ -520,7 +520,7 @@ if [ $(boolify ${WRITE_DOPOST}) = "TRUE" ]; then
     if [ $(boolify "${CPL_AQM}") = "TRUE" ]; then
       post_config_fp="${PARMdir}/upp/postxconfig-NT-AQM.txt"
     else
-      post_config_fp="${PARMdir}/upp/postxconfig-NT-fv3lam.txt"
+      post_config_fp="${PARMdir}/upp/postxconfig-NT-rrfs.txt"
     fi
     print_info_msg "
 ====================================================================
@@ -530,6 +530,17 @@ if [ $(boolify ${WRITE_DOPOST}) = "TRUE" ]; then
   cp ${post_config_fp} ./postxconfig-NT_FH00.txt
   cp ${post_config_fp} ./postxconfig-NT.txt
   cp ${PARMdir}/upp/params_grib2_tbl_new .
+  if [ $(boolify ${USE_CRTM}) = "TRUE" ]; then
+    cp ${CRTM_DIR}/Nalli.IRwater.EmisCoeff.bin ./
+    cp ${CRTM_DIR}/FAST*.bin ./
+    cp ${CRTM_DIR}/NPOESS.IRland.EmisCoeff.bin ./
+    cp ${CRTM_DIR}/NPOESS.IRsnow.EmisCoeff.bin ./
+    cp ${CRTM_DIR}/NPOESS.IRice.EmisCoeff.bin ./
+    cp ${CRTM_DIR}/AerosolCoeff.bin ./
+    cp ${CRTM_DIR}/CloudCoeff.bin ./
+    cp ${CRTM_DIR}/*.SpcCoeff.bin ./
+    cp ${CRTM_DIR}/*.TauCoeff.bin ./
+  fi
   # Set itag for inline-post:
   if [ $(boolify "${CPL_AQM}") = "TRUE" ]; then
     post_itag_add="aqf_on=.true.,"

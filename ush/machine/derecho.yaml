@@ -35,6 +35,8 @@ platform:
   FIXaqm: /glade/work/chanhooj/SRW-AQM_DATA/fix_aqm
   FIXemis: /glade/work/chanhooj/SRW-AQM_DATA/fix_emis
   EXTRN_MDL_DATA_STORES: aws
+global:
+  CRTM_DIR: /glade/work/epicufsrt/contrib/spack-stack/derecho/spack-stack-1.6.0/envs/unified-env/install/intel/2021.10.0/crtm-fix-2.4.0.1_emc-gvc54cn/fix
 data:
   ics_lbcs:
     FV3GFS: 
