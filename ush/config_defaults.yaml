@@ -367,12 +367,6 @@ platform:
   # FIXemis:
   # System directory where AQM emission data files are located.
   #
-  # FIXcrtm:
-  # System directory where CRTM fixed files are located
-  #
-  # FIXcrtmupp:
-  # System directory where CRTM fixed files specifically for UPP are located
-  #
   #-----------------------------------------------------------------------
   #
   FIXgsm: ""
@@ -383,8 +377,6 @@ platform:
   FIXshp: ""
   FIXaqm: ""
   FIXemis: ""
-  FIXcrtm: ""
-  FIXcrtmupp: ""
   #
   #-----------------------------------------------------------------------
   #

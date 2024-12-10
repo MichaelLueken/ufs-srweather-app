@@ -236,12 +236,6 @@ These parameters are associated with the fixed (i.e., static) files. On :srw-wik
 ``FIXemis``: (Default: "")
    Path to system directory containing AQM emission data files.
 
-``FIXcrtm``: (Default: "")
-   Path to system directory containing CRTM fixed files. 
-
-``FIXcrtmupp``: (Default: "")
-  Path to system directory containing CRTM fixed files specifically for UPP.
-
 ``EXTRN_MDL_DATA_STORES``: (Default: "")
    A list of data stores where the scripts should look for external model data. The list is in priority order. If disk information is provided via ``USE_USER_STAGED_EXTRN_FILES`` or a known location on the platform, the disk location will be highest priority. Valid values (in priority order): ``disk`` | ``hpss`` | ``aws`` | ``nomads``. 
 
