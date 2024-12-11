@@ -37,6 +37,8 @@ platform:
   FIXaqm: /work/noaa/epic/SRW-AQM_DATA/fix_aqm
   FIXemis: /work/noaa/epic/SRW-AQM_DATA/fix_emis
   EXTRN_MDL_DATA_STORES: aws
+global:
+  CRTM_DIR: /work/noaa/epic/role-epic/spack-stack/hercules/spack-stack-1.6.0/envs/unified-env/install/intel/2021.9.0/crtm-fix-2.4.0.1_emc-2os2hw2/fix
 data:
   ics_lbcs:
     FV3GFS:
