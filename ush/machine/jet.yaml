@@ -34,6 +34,8 @@ platform:
   FIXsfc: /mnt/lfs5/HFIP/hfv3gfs/role.epic/UFS_SRW_data/develop/fix/fix_sfc_climo
   FIXshp: /mnt/lfs5/HFIP/hfv3gfs/role.epic/UFS_SRW_data/develop/NaturalEarth
   EXTRN_MDL_DATA_STORES: hpss aws nomads
+global:
+  CRTM_DIR: /misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/crtm-fix-2.4.0.1_emc-bscege4/fix
 data:
   ics_lbcs:
     FV3GFS:
