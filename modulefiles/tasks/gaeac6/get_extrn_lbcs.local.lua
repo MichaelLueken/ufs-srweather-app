@@ -1,4 +1,5 @@
 setenv("LD_PRELOAD", "/lib64/libncurses.so.6")
 prepend_path("MODULEPATH", "/usw/hpss/modulefiles")
 load("hsi")
-load("run_vx.local")
+unload("python")
+load("python_srw")
